@@ -1,0 +1,385 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Valmik Patil | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 10%;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #0284c7;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            font-weight: bold;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #0284c7;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e0f2fe;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Valmik Patil</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Valmik Patil</span></h1>
+
+        <h3>Data Analyst | Data Science Enthusiast</h3>
+
+        <p>
+            I am an aspiring Data Analyst with knowledge of Python, SQL,
+            Excel, Power BI and data visualization. I enjoy transforming
+            raw data into meaningful insights and building interactive dashboards.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/ValmikP2309"
+           target="_blank">
+            View My GitHub
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a BCA graduate and aspiring Data Analyst interested in
+            data analysis, visualization and business intelligence.
+            I have worked on projects involving SQL databases,
+            Power BI dashboards, Excel analysis and Python.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to use data-driven approaches to solve
+            real-world business problems and continuously improve
+            my analytical skills.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Python</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">SQL / MySQL</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Statistics</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Git & GitHub</div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Fintech Fraud Detection Dashboard</h3>
+
+            <p>
+                Interactive dashboard project focused on fintech
+                transactions and fraud-related analysis.
+            </p>
+
+            <a href="https://github.com/ValmikP2309"
+               target="_blank">
+                View Project →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>NexusPay Transaction Database</h3>
+
+            <p>
+                Fintech database project involving users, wallets,
+                transactions, merchants and fraud detection data.
+            </p>
+
+            <a href="https://github.com/ValmikP2309/NexusPay_TransactionDataBase"
+               target="_blank">
+                View Project →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Fundraising Business Intelligence</h3>
+
+            <p>
+                Business intelligence project focused on fundraising
+                data analysis and generating useful insights.
+            </p>
+
+            <a href="https://github.com/ValmikP2309/FundRaising_BusinessIntellegence_Model"
+               target="_blank">
+                View Project →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Retailer Database Management</h3>
+
+            <p>
+                Database management project using SQL concepts,
+                tables, relationships and queries.
+            </p>
+
+            <a href="https://github.com/ValmikP2309/retailor_database_management"
+               target="_blank">
+                View Project →
+            </a>
+        </div>
+
+
+        <div class="project">
+            <h3>Aerox Database Management</h3>
+
+            <p>
+                SQL database management project demonstrating
+                database design and query operations.
+            </p>
+
+            <a href="https://github.com/ValmikP2309/aerox__database_management"
+               target="_blank">
+                View Project →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+        📧 Email: Your Email Here
+    </p>
+
+    <p>
+        💻 GitHub:
+        <a href="https://github.com/ValmikP2309" target="_blank">
+            github.com/ValmikP2309
+        </a>
+    </p>
+
+    <p>
+        🔗 LinkedIn: Add Your LinkedIn Profile
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Valmik Patil | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
+```
